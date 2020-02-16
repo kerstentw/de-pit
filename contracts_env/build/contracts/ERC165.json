@@ -1,0 +1,311 @@
+{
+  "contractName": "ERC165",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "_interfaceID",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"_interfaceID\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"A standard for detecting smart contract interfaces.  See: https://eips.ethereum.org/EIPS/eip-165.\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"Checks if the smart contract includes a specific interface.\",\"params\":{\"_interfaceID\":\"The interface identifier, as specified in ERC-165.\"},\"returns\":{\"_0\":\"True if _interfaceID is supported, false otherwise.\"}}}},\"userdoc\":{\"methods\":{\"supportsInterface(bytes4)\":{\"notice\":\"This function uses less than 30,000 gas.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/utils/erc165.sol\":\"ERC165\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/utils/erc165.sol\":{\"keccak256\":\"0x27b1eeda591f5533c25857fb9f6a8cb21ace7358a151ffdf0b52011a4fafb761\",\"urls\":[\"bzz-raw://e711c3df544325c72fbbab7b5506668799360ef6a1c89312db1adcb28064acea\",\"dweb:/ipfs/QmcSWFEb239xsVyuSEPAqRVqAcQQPHfGDr1nhG76aLGq3f\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.6.2;\n\n/**\n * @dev A standard for detecting smart contract interfaces. \n * See: https://eips.ethereum.org/EIPS/eip-165.\n */\ninterface ERC165\n{\n\n  /**\n   * @dev Checks if the smart contract includes a specific interface.\n   * @notice This function uses less than 30,000 gas.\n   * @param _interfaceID The interface identifier, as specified in ERC-165.\n   * @return True if _interfaceID is supported, false otherwise.\n   */\n  function supportsInterface(\n    bytes4 _interfaceID\n  )\n    external\n    view\n    returns (bool);\n    \n}\n",
+  "sourcePath": "/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/utils/erc165.sol",
+  "ast": {
+    "absolutePath": "/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/utils/erc165.sol",
+    "exportedSymbols": {
+      "ERC165": [
+        1852
+      ]
+    },
+    "id": 1853,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1844,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@dev A standard for detecting smart contract interfaces. \nSee: https://eips.ethereum.org/EIPS/eip-165.",
+        "fullyImplemented": false,
+        "id": 1852,
+        "linearizedBaseContracts": [
+          1852
+        ],
+        "name": "ERC165",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Checks if the smart contract includes a specific interface.\n@notice This function uses less than 30,000 gas.\n@param _interfaceID The interface identifier, as specified in ERC-165.\n@return True if _interfaceID is supported, false otherwise.",
+            "functionSelector": "01ffc9a7",
+            "id": 1851,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsInterface",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1847,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1846,
+                  "name": "_interfaceID",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1851,
+                  "src": "472:19:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 1845,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "472:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "466:29:16"
+            },
+            "returnParameters": {
+              "id": 1850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1849,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1851,
+                  "src": "531:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1848,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "531:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "530:6:16"
+            },
+            "scope": 1852,
+            "src": "440:97:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1853,
+        "src": "141:403:16"
+      }
+    ],
+    "src": "0:545:16"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/utils/erc165.sol",
+    "exportedSymbols": {
+      "ERC165": [
+        1852
+      ]
+    },
+    "id": 1853,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1844,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@dev A standard for detecting smart contract interfaces. \nSee: https://eips.ethereum.org/EIPS/eip-165.",
+        "fullyImplemented": false,
+        "id": 1852,
+        "linearizedBaseContracts": [
+          1852
+        ],
+        "name": "ERC165",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Checks if the smart contract includes a specific interface.\n@notice This function uses less than 30,000 gas.\n@param _interfaceID The interface identifier, as specified in ERC-165.\n@return True if _interfaceID is supported, false otherwise.",
+            "functionSelector": "01ffc9a7",
+            "id": 1851,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supportsInterface",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1847,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1846,
+                  "name": "_interfaceID",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1851,
+                  "src": "472:19:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 1845,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "472:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "466:29:16"
+            },
+            "returnParameters": {
+              "id": 1850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1849,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1851,
+                  "src": "531:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1848,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "531:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "530:6:16"
+            },
+            "scope": 1852,
+            "src": "440:97:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1853,
+        "src": "141:403:16"
+      }
+    ],
+    "src": "0:545:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Linux.g++"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.20",
+  "updatedAt": "2020-02-16T13:12:06.499Z",
+  "devdoc": {
+    "details": "A standard for detecting smart contract interfaces.  See: https://eips.ethereum.org/EIPS/eip-165.",
+    "methods": {
+      "supportsInterface(bytes4)": {
+        "details": "Checks if the smart contract includes a specific interface.",
+        "params": {
+          "_interfaceID": "The interface identifier, as specified in ERC-165."
+        },
+        "returns": {
+          "_0": "True if _interfaceID is supported, false otherwise."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "supportsInterface(bytes4)": {
+        "notice": "This function uses less than 30,000 gas."
+      }
+    }
+  }
+}

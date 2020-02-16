@@ -1,0 +1,65 @@
+#main_top {
+    margin-bottom: 75px;
+    height: 85%;
+}
+
+#branding{
+  background-image: url("../imgs/title_backer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#header {
+  height: 70px;
+  background-color: #3A3356;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 75px;
+  color: white;
+}
+
+#LobbySelect {
+  margin-bottom: 75px;
+}
+
+#header_text {
+  font-size: 50px;
+  font-family: 'Righteous', cursive;
+
+}
+
+#lobby_wrap {
+  margin-top: 60px;
+  padding: 5%;
+
+}
+
+#lobby_list {
+}
+
+#promo_text_wrap {
+  margin-top: auto;
+  padding: 15%;
+
+}
+
+#gamecard-wrap {
+  max-height: 100;
+  width: 100%
+  overflow-y: scroll
+}
+
+.game_card {
+  float: left;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.info_card {
+  padding: 10%;
+
+}

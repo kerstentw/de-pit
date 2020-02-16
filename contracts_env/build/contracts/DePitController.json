@@ -1,0 +1,104 @@
+{
+  "contractName": "DePitController",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/factories/DePitController.sol\":\"DePitController\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/factories/DePitController.sol\":{\"keccak256\":\"0x095634116b93afc052f5cc8731056c23e3e59e0ccd29ab66db9090669b21f188\",\"urls\":[\"bzz-raw://d923099103474d20cf9b9c3f6c39c9065019a6ad23a13e88a0576e7df07008e4\",\"dweb:/ipfs/QmVnY4eCxHEbF9EaaqhjMUeGojZ5iT51NnWJkrz8irbUXW\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201cd10544a9f1e2646de3a3082d8a41f856d8f23879c3cb3e40e09fb8cc08b8e464736f6c63430006020033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212201cd10544a9f1e2646de3a3082d8a41f856d8f23879c3cb3e40e09fb8cc08b8e464736f6c63430006020033",
+  "sourceMap": "24:29:1:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;24:29:1;;;;;;;",
+  "deployedSourceMap": "24:29:1:-:0;;;;;",
+  "source": "pragma solidity 0.6.2;\n\ncontract DePitController {\n\n}\n",
+  "sourcePath": "/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/factories/DePitController.sol",
+  "ast": {
+    "absolutePath": "/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/factories/DePitController.sol",
+    "exportedSymbols": {
+      "DePitController": [
+        39
+      ]
+    },
+    "id": 40,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 38,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "DePitController",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 40,
+        "src": "24:29:1"
+      }
+    ],
+    "src": "0:54:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/tk/Programming/education/prototypes/DePit/contracts_env/contracts/factories/DePitController.sol",
+    "exportedSymbols": {
+      "DePitController": [
+        39
+      ]
+    },
+    "id": 40,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 38,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "DePitController",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 40,
+        "src": "24:29:1"
+      }
+    ],
+    "src": "0:54:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Linux.g++"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.20",
+  "updatedAt": "2020-02-16T13:12:06.451Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

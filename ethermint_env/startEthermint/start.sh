@@ -1,0 +1,1 @@
+emintd start --pruning=nothing
