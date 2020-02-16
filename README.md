@@ -26,3 +26,10 @@ Repository] (https://github.com/ChainSafe/ethermint).
 # To Do
 
 - So much... will update shortly.
+
+# Screens
+
+![DePit Screen](https://i.imgur.com/BrttneV.png)
+![DePit Screen](https://i.imgur.com/opKdBk5.png)
+![DePit Screen](https://i.imgur.com/8L4C6xw.png)
+![DePit Screen](https://imgur.com/oLXAFIX)
