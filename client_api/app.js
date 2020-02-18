@@ -167,6 +167,8 @@ io.on('connection', function (socket) {
 
   socket.on("leave_room", (_msg)=>{
 
+
+    console.log("LEAVE ROOM")
     RoomHandler.removePlayer(_msg.room_id, _msg.player_id);
     RoomHandler.playerUnReady(_msg.room_id, _msg.player_id);
 
@@ -183,7 +185,7 @@ io.on('connection', function (socket) {
   })
 
 
-  socket.on("disconnect", () => {
+  socket.on("disconnect", async () => {
     let player_id = SOCK_TO_PLAYER[socket.id];
     let room_id = SOCK_TO_ROOM[socket.id];
 
@@ -198,24 +200,30 @@ io.on('connection', function (socket) {
 
     let cur_room = rooms[room_id];
 
-    if (cur_room && cur_room.is_playing && (cur_room.min_p > cur_room.cur_players)){
+    console.log ("DISCONNECT:", cur_room, cur_room.is_playing, (cur_room.min_p > cur_room.cur_players));
 
-      io.to(room_id).emit("hard_reset");
+    if (cur_room && cur_room.is_playing && (cur_room.min_p > cur_room.cur_players)) {
+
       RoomHandler.hardReset(room_id);
 
       io.emit("reset_table", {
         rooms: RoomHandler.getAllRooms()
       });
+
+      console.log("Disconnect WITH Reset")
+
+
+      io.to(room_id).emit("hard_reset");
+
+      return;
+
     }
 
-
+    console.log("Disconnect no Reset")
     io.emit("reset_table", {
       rooms: RoomHandler.getAllRooms()
     });
-
-  });
-
-
+  }); // End disconnection scope
 
 }); // End Connection Scope
 

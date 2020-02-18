@@ -256,13 +256,14 @@ function DePitApp(_socket) {
 
       // Placeholder: DELETE ME
       let mydeck = msg.decks[state.player_id];
+      console.log("ALL DECKS,", msg.decks);
       let keys = Object.keys(mydeck);
 
       console.log(mydeck);
 
       $("#cards").html(
          keys.map(data=>{
-           return `<img class="col-md-2 game_card" src="imgs/cards/${Object.keys(mydeck[data])[0]}.png"/>`
+           return `<img class="game_card" data-type=${data} src="imgs/cards/${Object.keys(mydeck[data])[0]}.png"/>`
          }).join("")
       )
 

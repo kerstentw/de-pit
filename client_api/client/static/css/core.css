@@ -45,14 +45,23 @@
 }
 
 #gamecard-wrap {
-  max-height: 100;
-  width: 100%
-  overflow-y: scroll
+  max-height: 300;
+  width: 90%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
-.game_card {
+#card {
   float: left;
+  display: inline-block;
 }
+
+#cardSelect {
+  align-items: center;
+}
+
+
 
 body {
   font-family: 'Nanum Gothic', sans-serif;
@@ -62,4 +71,16 @@ body {
 .info_card {
   padding: 10%;
 
+}
+
+.game_card {
+  border-radius: 5px;
+  margin-left: 10px;
+  border: 1px solid #DDDDDD;
+  cursor: pointer;
+}
+
+.game_card:hover {
+  opacity: .80;
+  background-color: #dbd5e3;
 }

@@ -125,7 +125,7 @@ function CardHandler(_room_details) {
 
     for (let i = 0; i < _room_details.players.length; i++) {
       playersObject[_room_details.players[i]] = _deck.slice(increment-INCRE_OFFSET,increment);
-      increment + INCRE_OFFSET; // This is some hack crap.
+      increment += INCRE_OFFSET; // This is some hack crap.
     }
 
     return playersObject;
