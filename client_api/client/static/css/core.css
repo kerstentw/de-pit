@@ -47,6 +47,8 @@
 #GameSection {
   height: 100%;
   align-items: center;
+  background-color: #3A3356;
+
 }
 
 #game-columns {
@@ -97,17 +99,17 @@ body {
 }
 
 #TrollBox {
-  border: 1px solid #DDDDDD;
+  border: 1px solid #3A3356;
   padding: 5px;
 }
 
 #TradeBook {
- border: 1px solid #DDDDDD;
+ border: 1px solid #3A3356;
  padding: 5px;
 }
 
 #GameStats {
-  border: 1px solid #DDDDDD;
+  border: 1px solid #3A3356;
   padding: 5px;
 
 }
