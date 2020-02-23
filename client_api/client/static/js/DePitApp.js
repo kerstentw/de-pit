@@ -263,7 +263,8 @@ function DePitApp(_socket) {
 
       $("#cards").html(
          keys.map(data=>{
-           return `<img class="game_card" data-type=${data} src="imgs/cards/${Object.keys(mydeck[data])[0]}.png"/>`
+           console.log("data_struct", mydeck[data])
+           return `<img class="game_card" data-identifier="${mydeck[data].token_id}" data-type=${data} src="imgs/cards/${Object.keys(mydeck[data])[0]}.png"/>`
          }).join("")
       )
 
