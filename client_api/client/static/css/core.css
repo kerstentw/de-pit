@@ -44,12 +44,22 @@
 
 }
 
+#GameSection {
+  height: 100%;
+  align-items: center;
+}
+
+#game-columns {
+  height: calc(100% - 200px);
+}
+
 #gamecard-wrap {
-  max-height: 300;
+  max-height: 300px;
   width: 90%;
   overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
+  margin: auto;
 }
 
 #card {
@@ -78,9 +88,26 @@ body {
   margin-left: 10px;
   border: 1px solid #DDDDDD;
   cursor: pointer;
+  height: 175px;
 }
 
 .game_card:hover {
   opacity: .80;
   background-color: #dbd5e3;
+}
+
+#TrollBox {
+  border: 1px solid #DDDDDD;
+  padding: 5px;
+}
+
+#TradeBook {
+ border: 1px solid #DDDDDD;
+ padding: 5px;
+}
+
+#GameStats {
+  border: 1px solid #DDDDDD;
+  padding: 5px;
+
 }
